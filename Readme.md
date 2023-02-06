@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ольга Фейш](https://up.htmlacademy.ru/htmlcss/36/user/2084339).
-* Наставник: `Олег Цыганов`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
