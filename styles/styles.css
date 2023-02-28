@@ -717,7 +717,7 @@ body {
 }
 
 .product-list-container {
-background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .product-list {
@@ -804,6 +804,4 @@ background-color: #ffffff;
   opacity: 0.6;
 }
 
-.pagination-disabled {
-
-}
+.pagination-disabled {}
