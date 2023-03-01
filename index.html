@@ -31,6 +31,7 @@
               type="text"
               id="search-field"
               name="search-field"
+              class="search-field"
               placeholder="Поиск по сайту"
             />
             <button class="search-button" type="submit">Найти</button>
@@ -39,7 +40,7 @@
             <li class="navigation-user-item login">
               <a class="navigation-user-link" href="#">Войти</a>
             </li>
-            <li class="navigation-user-item">
+            <li class="navigation-user-item compare">
               <a class="navigation-user-link" href="#">Сравнить</a>
             </li>
             <li class="navigation-user-item">
@@ -50,28 +51,34 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-            <ul class="navigation-sub-list">
-              <li class="navigation-sub-item">
-                <a class="navigation-sub-link" href="#"
-                  >Виртуальная реальность</a
-                >
-              </li>
-              <li class="navigation-sub-item">
-                <a class="navigation-sub-link" href="#">Моноподы для cелфи</a>
-              </li>
-              <li class="navigation-sub-item">
-                <a class="navigation-sub-link" href="#">Экшн-камеры</a>
-              </li>
-              <li class="navigation-sub-item">
-                <a class="navigation-sub-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="navigation-sub-item">
-                <a class="navigation-sub-link" href="#">Умные часы</a>
-              </li>
-              <li class="navigation-sub-item">
-                <a class="navigation-sub-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div>
+              <ul class="navigation-sub-list">
+                <li class="navigation-sub-item">
+                  <a class="navigation-sub-link" href="#"
+                    >Виртуальная реальность</a
+                  >
+                </li>
+                <li class="navigation-sub-item">
+                  <a class="navigation-sub-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="navigation-sub-item">
+                  <a class="navigation-sub-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="navigation-sub-list">
+                <li class="navigation-sub-item">
+                  <a class="navigation-sub-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="navigation-sub-item">
+                  <a class="navigation-sub-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="navigation-sub-list">
+                <li class="navigation-sub-item">
+                  <a class="navigation-sub-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navigation-item navigation-item-second">
             <a class="navigation-link" href="#">Доставка</a>
@@ -87,8 +94,8 @@
     </header>
 
     <main class="main-container main-index">
-      <div class="page-container">
-        <section class="slider">
+      <section class="slider">
+        <div class="section-container">
           <h1 class="visually-hidden">Слайдер товаров</h1>
           <ul class="slider-list">
             <li class="slider-item">
@@ -231,9 +238,11 @@
               </button>
             </li>
           </ol>
-        </section>
+        </div>
+      </section>
 
-        <section class="category">
+      <section class="category">
+        <div class="section-container">
           <h2 class="visually-hidden">Категории товаров</h2>
           <ul class="category-list">
             <li class="category-item">
@@ -255,9 +264,11 @@
               <a class="category-name" href="#">Квадрокоптеры</a>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="property">
+      <section class="property">
+        <div class="section-container property-section-container">
           <h2 class="visually-hidden">Условия</h2>
           <ul class="property-list">
             <li class="property-item">
@@ -322,14 +333,18 @@
               />
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="delivery">
+      <section class="delivery">
+        <div class="section-container">
           <h2 class="visually-hidden">Доставка</h2>
           <a class="delivery-text" href="#">Доставим редкий товар под заказ</a>
-        </section>
+        </div>
+      </section>
 
-        <section class="info">
+      <section class="info">
+        <div class="section-container info-section-container">
           <div class="info-about">
             <h2 class="info-title">О нас</h2>
             <p class="info-text">
@@ -374,9 +389,11 @@
               Напишите нам
             </button>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="newsletter">
+      <section class="newsletter">
+        <div class="section-container">
           <div class="newsletter-title-text">
             <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
             <p class="newsletter-text">
@@ -399,8 +416,8 @@
             <button class="newsletter-button" type="submit">Подписаться</button>
             <p class="newsletter-text">Это бесплатно</p>
           </form>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -424,13 +441,13 @@
           <nav class="footer-navigation">
             <ul class="footer-navigation-list">
               <li class="footer-navigation-item">
-                <button class="footer-button" type="button">Доставка</button>
+                <a class="footer-button" link="#">Доставка</a>
               </li>
               <li class="footer-navigation-item">
-                <button class="footer-button" type="button">Гарантия</button>
+                <a class="footer-button" link="#">Гарантия</a>
               </li>
               <li class="navigation-item">
-                <button class="footer-button" type="button">Контакты</button>
+                <a class="footer-button" link="#">Контакты</a>
               </li>
             </ul>
           </nav>
