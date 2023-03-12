@@ -117,6 +117,45 @@
                 </svg>
                 Корзина</a
               >
+              <div class="popover popover-cart">
+                <button class="popover-close-button">
+                  2
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <span class="cart-item-image"></span>
+                      <p class="cart-item-title">Любительская селфи-палка</p>
+                      <p class="visually-hidden cart-item-price">500 ₽</p>
+                      <button type="button" class="cart-item-button">
+                        <svg aria-hidden="true"
+                        focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+                          </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <span class="cart-item-image"></span>
+                      <p class="cart-item-title">Профессиональная селфи-палка</p>
+                      <p class="visually-hidden cart-item-price">1500 ₽</p>
+                      <button type="button" class="cart-item-button">
+                        <svg aria-hidden="true"
+                        focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+                          </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-amount-sum">
+                    <p class="cart-amount">Товаров: 2</p>
+                    <p class="cart-sum">Сумма: 2000 ₽</p>
+                  </div>
+                  <button type="button" class="popover-cart-button">Открыть корзину</button>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -227,7 +266,7 @@
       <section class="catalog-products">
         <div class="catalog-products-section-container">
           <div class="catalog-left-column">
-            <h2 class="catalog-title">Фильтр:</h2>
+            <h2 class="catalog-title catalog-title-filter">Фильтр:</h2>
             <form
               class="catalog-filter"
               action="https://echo.htmlacademy.ru/"
@@ -266,49 +305,56 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="black"
                         checked
                       />
-                      Черный
+                      <span class="control-mark"></span>
+                    <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="white"
                         checked
                       />
-                      Белый
+                      <span class="control-mark"></span>
+                    <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="blue"
                       />
-                      Синий
+                      <span class="control-mark"></span>
+                    <span class="control-label">Синий</span>
+
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="red" />
-                      Красный
+                      <input class="visually-hidden control-input" type="checkbox" name="red" />
+                      <span class="control-mark"></span>
+                    <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="pink"
                       />
-                      Розовый
+                      <span class="control-mark"></span>
+                    <span class="control-label">Розовый</span>
+
                     </label>
                   </li>
                 </ul>
@@ -320,24 +366,26 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="bluetooth"
                         value="yes"
                         checked
                       />
-                      Есть
+                      <span class="control-mark"></span>
+                    <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="bluetooth"
                         value="no"
                       />
-                      Нет
+                      <span class="control-mark"></span>
+                    <span class="control-label">Нет</span>
                     </label>
                   </li>
                 </ul>
