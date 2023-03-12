@@ -1229,6 +1229,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   min-height: 301px;
+  display: none;
 }
 
 .popover-close-button {
