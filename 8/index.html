@@ -147,34 +147,31 @@
                 </svg>
               </span>
             </a>
-            <div class="visually-hidden">
-              <ul class="navigation-sub-list">
-                <li class="navigation-sub-item">
-                  <a class="navigation-sub-link" href="#"
-                    >Виртуальная реальность</a
-                  >
-                </li>
-                <li class="navigation-sub-item">
-                  <a class="navigation-sub-link" href="#">Моноподы для cелфи</a>
-                </li>
-                <li class="navigation-sub-item">
-                  <a class="navigation-sub-link" href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="navigation-sub-list">
-                <li class="navigation-sub-item">
-                  <a class="navigation-sub-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="navigation-sub-item">
-                  <a class="navigation-sub-link" href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="navigation-sub-list">
-                <li class="navigation-sub-item">
-                  <a class="navigation-sub-link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
+            <ul class="navigation-sub-list">
+              <div class="navigation-sub-column">
+              <li class="navigation-sub-item">
+                <a class="navigation-sub-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="navigation-sub-item">
+                <a class="navigation-sub-link" href="#">Моноподы для cелфи</a>
+              </li>
+              <li class="navigation-sub-item">
+                <a class="navigation-sub-link" href="#">Экшн-камеры</a>
+              </li>
             </div>
+              <div class="navigation-sub-column">
+              <li class="navigation-sub-item">
+                <a class="navigation-sub-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="navigation-sub-item">
+                <a class="navigation-sub-link" href="#">Умные часы</a>
+              </li>
+            </div>
+              <div class="navigation-sub-column">
+              <li class="navigation-sub-item">
+                <a class="navigation-sub-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li class="navigation-item navigation-item-second">
             <a class="navigation-link" href="#">Доставка</a>
@@ -515,17 +512,17 @@
           <h2 class="visually-hidden">Условия</h2>
           <ul class="property-list">
             <li class="property-item">
-              <button class="property-button button" type="button">
+              <button class="property-button property-button-current" type="button">
                 Доставка
               </button>
             </li>
             <li class="property-item">
-              <button class="property-button button" type="button">
+              <button class="property-button" type="button">
                 Гарантия
               </button>
             </li>
             <li class="property-item">
-              <button class="property-button button" type="button">
+              <button class="property-button" type="button">
                 Кредит
               </button>
             </li>
@@ -582,8 +579,9 @@
       </section>
 
       <section class="delivery">
+        <h2 class="visually-hidden">Доставка</h2>
         <a class="section-container delivery-section-link" href="#">
-          <h2 class="visually-hidden">Доставка</h2>
+
           <div class="delivery-image-wrapper">
             <svg
               class="delivery-image"
@@ -605,7 +603,6 @@
             </svg>
           </div>
           <p class="delivery-text">Доставим редкий товар под заказ</p>
-          <div class="delivery-image-info-container">
             <span class="delivery-image-info-wrapper">
               <svg
                 class="delivery-image-info"
@@ -621,7 +618,6 @@
                 <path d="M3 4H1V12H3V4Z" fill="black" />
               </svg>
             </span>
-          </div>
         </a>
       </section>
 
@@ -723,13 +719,13 @@
           <nav class="footer-navigation">
             <ul class="footer-navigation-list">
               <li class="footer-navigation-item">
-                <a class="footer-button" link="#">Доставка</a>
+                <a class="footer-button" href="#">Доставка</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="footer-button" link="#">Гарантия</a>
+                <a class="footer-button" href="#">Гарантия</a>
               </li>
               <li class="navigation-item">
-                <a class="footer-button" link="#">Контакты</a>
+                <a class="footer-button" href="#">Контакты</a>
               </li>
             </ul>
           </nav>

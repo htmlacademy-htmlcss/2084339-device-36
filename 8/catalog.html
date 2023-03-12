@@ -140,7 +140,6 @@
                 </svg>
               </span>
             </a>
-
             <ul class="navigation-sub-list">
               <div class="navigation-sub-column">
               <li class="navigation-sub-item">
@@ -166,7 +165,6 @@
                 <a class="navigation-sub-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
-          </div>
           </li>
           <li class="navigation-item navigation-item-second">
             <a class="navigation-link" href="#">Доставка</a>
@@ -238,7 +236,30 @@
             >
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
-                <!--Здесь добавить ренж слайдер-->
+
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 110px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 47px">
+                    </label>
+                  </div>
+                </div>
+
+
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
