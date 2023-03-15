@@ -1567,16 +1567,16 @@ body {
   outline: none;
 }
 
-.breadcrumbs-link-category:hover {
+.breadcrumbs-link:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link-category:active {
+.breadcrumbs-link:active {
   opacity: 0.3;
 }
 
-.breadcrumbs-link-category:focus {
-  outline: 5px solid #af4fff;
+.breadcrumbs-link:focus {
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -1617,11 +1617,19 @@ body {
   background-color: #000000;
 }
 
-.range-toggle:focus {
-  width: 22px;
-  height: 22px;
+.range-toggle:focus::after {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 21px;
+  height: 21px;
+  content: "";
   outline: 2px solid #af4fff;
-  outline-offset: 2px;
+}
+
+
+.range-toggle:focus {
+  outline: none;
 }
 
 .toggle-min {
@@ -1762,12 +1770,25 @@ body {
 .control-input[type="checkbox"]:focus + .control-mark::before,
 .control-input[type="checkbox"]:focus + .control-mark::after {
   position: absolute;
-  top: -3px;
+  top: -4px;
   left: -3px;
   width: 23px;
   height: 23px;
   content: "";
   outline: 2px solid #af4fff;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: -4px;
+  left: -3px;
+  width: 23px;
+  height: 23px;
+  content: url(../images/check-black.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .control {
@@ -1804,18 +1825,7 @@ body {
   opacity: 0.1;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 23px;
-  height: 23px;
-  content: url(../images/check-black.svg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
@@ -1823,8 +1833,8 @@ body {
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 4px;
+  left: 4px;
   width: 7px;
   height: 7px;
   background-color: #000000;
@@ -1835,31 +1845,14 @@ body {
 .control-input[type="radio"]:focus + .control-mark::after {
   position: absolute;
   top: -3px;
-  left: -2px;
+  left: -3px;
   width: 22px;
-  height: 23px;
+  height: 22px;
   background-color: transparent;
   content: "";
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
-
-/*
-.filter-button-wrapper:focus-within {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 22px;
-  height: 22px;
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
-.filter-button-wrapper:focus-within + .control-mark::before {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-*/
 
 .control-label {
   line-height: 20px;
@@ -2008,16 +2001,17 @@ body {
 }
 
 .product-button-overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 380px;
   background: rgba(255, 255, 255, 0);
 }
 
 .product-card-link:hover .product-button-overlay {
   display: block;
-  background: rgba(240, 240, 240, 0.8);
+  background-color: rgba(240, 240, 240, 0.8);
 }
 
 .product-card-button {
@@ -2253,6 +2247,7 @@ body {
   width: 540px;
 }
 
+
 .delivery-form-field-error {
   border: 2px solid #ff3d3d;
   color: rgba(0, 0, 0, 1);
@@ -2309,6 +2304,10 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+}
+
+.delivery-amount-count:invalid {
+  outline: 2px solid #ff3d3d;
 }
 
 .delivery-amount-button {
